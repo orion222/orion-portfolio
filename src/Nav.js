@@ -1,34 +1,56 @@
 import './App.css';
 import React from 'react';
 import styled from 'styled-components';
+import theme from './theme';
 
-
+const {colors} = theme;
 function Nav(){
     const Container = styled.div`
         position: fixed;
-        width: 100%;
+        width: 100vw;
         height: 5vw;
-        margin-top: 100vh;
-        margin: auto;
-        background-color: green;
+        background-color: ${colors.jade};
         font-family: Courier new, monospace;
-        font-size: 2vw; 
+        font-size: 1.5vw; 
+        padding-left: auto;
+        padding-right: auto;
+        display: flex;
+        justify-content: center;
         `;
 
-    const Button = styled.div`
-        width: 10%;
-        padding-top: 1vw;
+    const ButtonContainer = styled.div`
         position: relative;
-        float: right;
+        margin-top: auto;
+        width: 35vw;
         display: flex;
+      
+    `;
+
+    const Button = styled.a`
+        position: relative;
+        margin: auto;
+        &:hover{
+            font-weight: 900;
+        }
+        &:active{
+
+        }
     `;
 
     return (
-
         <Container>
-            <Button >
-                Contact
-            </Button>
+            <ButtonContainer>
+
+                <Button>
+                    Contact
+                </Button>
+                <Button >
+                    Home
+                </Button>
+                <Button >
+                    Resume
+                </Button>
+            </ButtonContainer>
 
         
         </Container>
