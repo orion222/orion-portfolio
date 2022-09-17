@@ -55,18 +55,23 @@ function Nav(){
 
     return (
         <Container>
-            <ButtonContainer>
-                
-                <Button>
-                    Contact
-                </Button>
-                <Button >
-                    Home
-                </Button>
-                <Button >
-                    Resume
-                </Button>
-            </ButtonContainer>  
+            <div>
+                orino chen
+                <ButtonContainer>
+                    
+                    <Button>
+                        Contact
+                    </Button>
+                    <Button >
+                        Home
+                    </Button>
+                    <Button >
+                        Resume
+                    </Button>
+                </ButtonContainer>
+
+            </div>
+            
             <Logo href='https://github.com/orion222' target="_blank">
             
             </Logo>
