@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import styled from 'styled-components';
 import theme from './theme';
+import logo from './images/gitLogo.png';
 
 const {colors} = theme;
 function Nav(){
@@ -12,17 +13,19 @@ function Nav(){
         background-color: ${colors.jade};
         font-family: Courier new, monospace;
         font-size: 1.5vw; 
-        padding-left: auto;
-        padding-right: auto;
         display: flex;
-        justify-content: center;
+
         `;
 
     const ButtonContainer = styled.div`
         position: relative;
         margin-top: auto;
+        margin-left: 33vw;
         width: 35vw;
         display: flex;
+        background-color: white;
+
+
       
     `;
 
@@ -37,10 +40,23 @@ function Nav(){
         }
     `;
 
+    const Logo = styled.a`
+        width: 3vw;
+        height: 4vw;
+        background-image: url(${logo});
+        background-repeat: no-repeat;
+        background-size: 3vw;
+        margin-left: 27vw;
+        margin-top: 1vw;
+
+        
+    `
+
+
     return (
         <Container>
             <ButtonContainer>
-
+                
                 <Button>
                     Contact
                 </Button>
@@ -50,11 +66,14 @@ function Nav(){
                 <Button >
                     Resume
                 </Button>
-            </ButtonContainer>
+            </ButtonContainer>  
+            <Logo href='https://github.com/orion222' target="_blank">
+            
+            </Logo>
+          
 
-        
         </Container>
-
+            
     );
 
 }

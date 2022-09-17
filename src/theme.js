@@ -11,7 +11,9 @@ const theme = {
     },
 
     fonts:{
-        normal: 'Sans serif'
+        normal: 'Sans serif',
+
+
     }
 }
 
