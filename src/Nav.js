@@ -56,7 +56,7 @@ function Nav(){
     return (
         <Container>
             <div>
-                orion chen
+                Orion Chen
                 <ButtonContainer>
                     
                     <Button>
