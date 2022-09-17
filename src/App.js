@@ -1,4 +1,5 @@
-import logo from './logo.svg';
+import React, { Component }  from 'react';
+import logo from './images/gitLogo.png';
 import './App.css';
 
 function App() {
