@@ -11,7 +11,7 @@ function Nav(){
         width: 100vw;
         height: 5vw;
         background-color: ${colors.jade};
-        font-family: Courier new, monospace;
+        font-family: 'Reem Kufi Fun', sans-serif;
         font-size: 1.5vw; 
         display: flex;
 
@@ -23,7 +23,6 @@ function Nav(){
         margin-left: 33vw;
         width: 35vw;
         display: flex;
-        background-color: white;
 
 
       
@@ -33,10 +32,8 @@ function Nav(){
         position: relative;
         margin: auto;
         &:hover{
+            color: white;
             font-weight: 900;
-        }
-        &:active{
-
         }
     `;
 
@@ -51,26 +48,25 @@ function Nav(){
 
         
     `
+    
 
 
     return (
         <Container>
-            <div>
-                orion chen
-                <ButtonContainer>
-                    
-                    <Button>
-                        Contact
-                    </Button>
-                    <Button >
-                        Home
-                    </Button>
-                    <Button >
-                        Resume
-                    </Button>
-                </ButtonContainer>
+            <ButtonContainer>
+                
+                <Button>
+                    Contact
+                </Button>
+                <Button >
+                    Home
+                </Button>
+                <Button >
+                    Resume
+                </Button>
+            </ButtonContainer>
 
-            </div>
+     
             
             <Logo href='https://github.com/orion222' target="_blank">
             

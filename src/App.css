@@ -1,3 +1,8 @@
+/*
+FONTS
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@500&family=Reem+Kufi+Fun:wght@600&display=swap');
 .App {
   text-align: center;
 }
@@ -37,4 +42,3 @@
   }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
