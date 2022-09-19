@@ -11,27 +11,26 @@ function Nav(){
         width: 100vw;
         height: 5vw;
         background-color: ${colors.jade};
-        font-family: Courier new, monospace;
         font-size: 1.5vw; 
         display: flex;
+        justify-content: center;
 
         `;
 
     const ButtonContainer = styled.div`
         position: relative;
-        margin-top: auto;
-        margin-left: 33vw;
         width: 35vw;
         display: flex;
-        background-color: white;
-
-
+        font-family: Courier new, monospace;
       
     `;
+
+    
 
     const Button = styled.a`
         position: relative;
         margin: auto;
+        margin-top: 1vw;
         &:hover{
             font-weight: 900;
         }
@@ -46,16 +45,24 @@ function Nav(){
         background-image: url(${logo});
         background-repeat: no-repeat;
         background-size: 3vw;
-        margin-left: 27vw;
         margin-top: 1vw;
+        margin-left: 25vw;
 
         
     `
 
+    const DoubleDeck = styled.div`
+        height: 5vw;
+        width: 35vw;
+        text-align: center;
+        margin-left: 33vw;
+    `
+
+
 
     return (
         <Container>
-            <div>
+            <DoubleDeck>
                 orion chen
                 <ButtonContainer>
                     
@@ -70,14 +77,14 @@ function Nav(){
                     </Button>
                 </ButtonContainer>
 
-            </div>
-            
+            </DoubleDeck>
             <Logo href='https://github.com/orion222' target="_blank">
-            
+        
             </Logo>
-          
+        
 
         </Container>
+            
             
     );
 
