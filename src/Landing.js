@@ -5,6 +5,7 @@ import theme from './theme';
 import Nav from './Nav';
 
 const {colors} = theme;
+const {fonts} = theme;
 function Landing() {
 
     const Container = styled.div`
@@ -24,23 +25,26 @@ function Landing() {
         display: flex;
         margin: auto;
         align-items: center;
+        border-radius: 5vw;
     `
 
     const TextBox = styled.div`
-        height: 20vw;
         width: 30vw;
-        background-color: white;
-        left: 2.5vw;
+        margin-left: 3vw;
 
     `
 
     const Header = styled.div`
         font-weight: 900;
         font-size: 5vw;
+        color: white;
+        
 
     `
     const Description = styled.div`
+        font-family: ${fonts.wavy};
         font-size: 1.3vw;
+        text-align: justify;
     `
 
     
@@ -50,29 +54,15 @@ function Landing() {
             <Nav/>
             <Container>
                 <MainBox>
-                    <div>
-                        This is...
-                        <TextBox>
-                            <Header>Orion Chen</Header>
-                            <Description>
-                            lorem ipsum and that bullshits
-                            </Description>
-                        </TextBox>
-
-
-                    
-
-                    </div>
-                   
-
+                    <TextBox>
+                        <Header>Orion Chen</Header>
+                        <Description>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </Description>
+                    </TextBox>
                 </MainBox>
-                
             </Container>
-
-
         </div>
-        
-        
     )
 
 }
