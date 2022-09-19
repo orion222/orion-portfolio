@@ -56,12 +56,20 @@ function Nav(){
         width: 35vw;
         text-align: center;
         margin-left: 33vw;
+        background-color: white;
+ 
+
     `
 
+    const Name = styled.div`
+        
+        
+    `
 
 
     return (
         <Container>
+
             <DoubleDeck>
                 orion chen
                 <ButtonContainer>
