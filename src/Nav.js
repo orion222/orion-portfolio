@@ -14,13 +14,12 @@ function Nav(){
         font-family: 'Reem Kufi Fun', sans-serif;
         font-size: 1.5vw; 
         display: flex;
+        justify-content: center;
 
         `;
 
     const ButtonContainer = styled.div`
         position: relative;
-        margin-top: auto;
-        margin-left: 33vw;
         width: 35vw;
         display: flex;
 
@@ -28,9 +27,12 @@ function Nav(){
       
     `;
 
+    
+
     const Button = styled.a`
         position: relative;
         margin: auto;
+        margin-top: 1vw;
         &:hover{
             color: white;
             font-weight: 900;
@@ -43,37 +45,55 @@ function Nav(){
         background-image: url(${logo});
         background-repeat: no-repeat;
         background-size: 3vw;
-        margin-left: 27vw;
         margin-top: 1vw;
+        margin-left: 25vw;
 
         
     `
     
 
+    const DoubleDeck = styled.div`
+        height: 5vw;
+        width: 35vw;
+        text-align: center;
+        margin-left: 33vw;
+        background-color: white;
+ 
+
+    `
+
+    const Name = styled.div`
+        
+        
+    `
+
 
     return (
         <Container>
-            <ButtonContainer>
-                
-                <Button>
-                    Contact
-                </Button>
-                <Button >
-                    Home
-                </Button>
-                <Button >
-                    Resume
-                </Button>
-            </ButtonContainer>
 
-     
-            
+            <DoubleDeck>
+                orion chen
+                <ButtonContainer>
+                    
+                    <Button>
+                        Contact
+                    </Button>
+                    <Button >
+                        Home
+                    </Button>
+                    <Button >
+                        Resume
+                    </Button>
+                </ButtonContainer>
+
+            </DoubleDeck>
             <Logo href='https://github.com/orion222' target="_blank">
-            
+        
             </Logo>
-          
+        
 
         </Container>
+            
             
     );
 

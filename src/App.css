@@ -39,6 +39,8 @@ FONTS
   }
   to {
     transform: rotate(360deg);
-  }
+  } 
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap');
