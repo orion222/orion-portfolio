@@ -3,6 +3,8 @@ import React from 'react';
 import styled from 'styled-components';
 import theme from './theme';
 import logo from './images/gitLogo.png';
+import logo2 from './images/gitLogoHighlighted.png';
+
 
 const {colors} = theme;
 function Nav(){
@@ -22,6 +24,7 @@ function Nav(){
         position: relative;
         width: 35vw;
         display: flex;
+        margin-top: auto;
 
 
       
@@ -32,61 +35,82 @@ function Nav(){
     const Button = styled.a`
         position: relative;
         margin: auto;
-        margin-top: 1vw;
+        margin-top: 0.5vw;
+        font-family: 'Reem Kufi Fun', sans-serif;
         &:hover{
             color: white;
             font-weight: 900;
         }
+        color: black;
+        &:link { text-decoration: none; }
+        &:visited { text-decoration: none; }
+        &:hover { text-decoration: none; }
+        &:active { text-decoration: none; }
+        
     `;
 
     const Logo = styled.a`
         width: 3vw;
-        height: 4vw;
         background-image: url(${logo});
         background-repeat: no-repeat;
         background-size: 3vw;
         margin-top: 1vw;
-        margin-left: 25vw;
+        margin-left: 28vw;
+        &:hover{
+            background-image: url(${logo2});
+        }
 
         
     `
     
 
-    const DoubleDeck = styled.div`
+    const DoubleDecker = styled.div`
         height: 5vw;
         width: 35vw;
         text-align: center;
-        margin-left: 33vw;
-        background-color: white;
+        margin-left: 15vw;
+        font-family: 'Open Sans', sans-serif;
  
 
     `
 
     const Name = styled.div`
-        
+        width: 10vw;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 6vw;
+        font-family: 'Indie Flower', cursive;
+        font-weight: 900;
+
         
     `
 
 
     return (
         <Container>
+            <Name>
+                Orion Chen
+            </Name>
 
-            <DoubleDeck>
-                orion chen
+            <DoubleDecker>
+                Contents
                 <ButtonContainer>
                     
                     <Button>
-                        Contact
+                        Projects
                     </Button>
                     <Button >
                         Home
                     </Button>
-                    <Button >
+                    <Button href='https://docs.google.com/document/d/1Xv1uMXS3k9yu0NcZQmkbjQ-D6gSYQVQP/edit?usp=sharing&ouid=105402434894730909309&rtpof=true&sd=true' target = '_blank'>
                         Resume
                     </Button>
                 </ButtonContainer>
 
-            </DoubleDeck>
+            </DoubleDecker>
+                
+
+         
             <Logo href='https://github.com/orion222' target="_blank">
         
             </Logo>

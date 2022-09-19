@@ -8,7 +8,8 @@ const theme = {
         tan: '#ECB390',
         lightRed: '#FF5B5B',
         pastelBlue: '#8298FF',
-        grey: '#7C767C'
+        grey: '#7C767C',
+        gold: '#FFD799'
     },
 
     fonts:{
