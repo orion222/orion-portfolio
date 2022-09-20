@@ -1,3 +1,3 @@
-## first react project 
+## Orion's Portolio
 
-trying to learn react
+A website made with React to talk a bit about me.
