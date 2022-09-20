@@ -2,8 +2,8 @@ import './App.css';
 import React from 'react';
 import styled from 'styled-components';
 import theme from './theme';
-import logo from './images/gitLogo.png';
-import logo2 from './images/gitLogoHighlighted.png';
+import logo from './images/logos/gitLogo.png';
+import logo2 from './images/logos/gitLogoHighlighted.png';
 
 
 const {colors} = theme;
@@ -96,7 +96,7 @@ function Nav(){
                 Contents
                 <ButtonContainer>
                     
-                    <Button>
+                    <Button href='/#/projects'>
                         Projects
                     </Button>
                     <Button >

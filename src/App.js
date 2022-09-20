@@ -1,13 +1,17 @@
 import React, { Component }  from 'react';
-import logo from './images/gitLogo.png';
 import './App.css';
-import Nav from './Nav';
 import Landing from './Landing';
+import Projects from './Projects';
+import { HashRouter as Router,Routes, Route, Link } from 'react-router-dom';
+
 
 function App() {
   return (
     <div>
-      <Landing/>
+      <Routes>
+          <Route exact path='/' element={<Landing/>}></Route>
+          <Route exact path='/projects' element={<Projects/>}></Route>
+        </Routes>
     </div>
   );
 }
