@@ -14,7 +14,7 @@ const{colors} = theme;
 function Footer(){
 
     const Container = styled.div`
-        position: relative;
+        position: fixed;
         width: 100vw;
         height: 3.45vw;
         background-color: ${colors.grey};
@@ -75,8 +75,9 @@ function Footer(){
                 background-repeat: no-repeat;
                 background-position: center;
                 &:hover {
-                    background-color: ${colors.jade};
-                    transition: background-color 1s;
+                    transition: transform 1s;
+                    transform: translateY(-1vw);
+
                 }    
 
                 

@@ -24,7 +24,8 @@ function Nav(){
         position: relative;
         width: 35vw;
         display: flex;
-        margin-top: auto;
+        margin-top: 2.5vw;
+
 
 
       
@@ -35,7 +36,6 @@ function Nav(){
     const Button = styled.a`
         position: relative;
         margin: auto;
-        margin-top: 0.5vw;
         font-family: 'Reem Kufi Fun', sans-serif;
         &:hover{
             color: white;
@@ -93,13 +93,13 @@ function Nav(){
             </Name>
 
             <DoubleDecker>
-                Contents
+                
                 <ButtonContainer>
                     
                     <Button href='/#/projects'>
                         Projects
                     </Button>
-                    <Button >
+                    <Button href='/'>
                         Home
                     </Button>
                     <Button href='https://docs.google.com/document/d/1Xv1uMXS3k9yu0NcZQmkbjQ-D6gSYQVQP/edit?usp=sharing&ouid=105402434894730909309&rtpof=true&sd=true' target = '_blank'>
@@ -111,7 +111,7 @@ function Nav(){
                 
 
          
-            <Logo href='https://github.com/orion222' target="_blank">
+            <Logo href='https://github.com/orion222/orion-portfolio' target="_blank">
         
             </Logo>
         
