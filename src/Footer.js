@@ -70,7 +70,7 @@ function Footer(){
             const Button = styled.div`
                 width: 2.5vw;
                 height: 2.3vw;
-                background-image: url(${logos[i]});
+                background-image: url(${"./images/logos/" + logos[i] +  "Logo.png"});
                 background-size: 2.2vw;
                 background-repeat: no-repeat;
                 background-position: center;
