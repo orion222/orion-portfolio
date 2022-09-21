@@ -46,19 +46,19 @@ function Footer(){
     `
 
     const logos = [
-        "devpost", 
-        "discord", 
-        "git", 
-        "dmoj", 
-        "instagram"
+        devpost, 
+        discord, 
+        git, 
+        dmoj, 
+        instagram
     ]
 
     const logosLinks = [
-        "https://abc.com",
-        "https://abc.com",
-        "https://abc.com",
-        "https://abc.com",
-        "https://abc.com",
+        "https://devpost.com/0222orion?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav",
+        "https://discord.com/users/244511586709012482",
+        "https://github.com/orion222",
+        "https://dmoj.ca/user/Orion222",
+        "https://www.instagram.com/orion_222/"
     ]
 
 
@@ -70,7 +70,7 @@ function Footer(){
             const Button = styled.div`
                 width: 2.5vw;
                 height: 2.3vw;
-                background-image: url(${"./images/logos/" + logos[i] +  "Logo.png"});
+                background-image: url(${logos[i]});
                 background-size: 2.2vw;
                 background-repeat: no-repeat;
                 background-position: center;
