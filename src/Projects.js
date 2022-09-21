@@ -5,6 +5,8 @@ import theme from './theme';
 import Nav from './Nav';
 import Footer from './Footer'
 import img from './images/orionchen.jpg'
+import gitLogo from './images/logos/gitLogo.png';
+import link from './images/link.png';
 
 const {colors} = theme;
 const {fonts} = theme;
@@ -80,8 +82,23 @@ function Projects() {
         height: 2.6vw;
         width: 14vw;
         bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     `
-    const LinkImage = styled.div`
+
+    const InnerBox = styled.div`
+        height: 2.0vw;
+        width: 6.0vw;
+        display: flex;
+        justify-content: space-around;
+    `
+    const LinkImage = styled.a`
+        height: 2.0vw;
+        width: 2.0vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     `
     return (
         <Container>
@@ -92,7 +109,12 @@ function Projects() {
                             <Cover/>
                             <GameTitle>notified</GameTitle>
                             <Blurb>aaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaa</Blurb>
-                            <LinkBox></LinkBox> 
+                            <LinkBox>
+                                <InnerBox>
+                                    <LinkImage style={{backgroundImage: `url(${link})`}} href="dmoj.ca"></LinkImage>
+                                    <LinkImage style={{backgroundImage: `url(${gitLogo})`}} href="dmoj.ca"></LinkImage>
+                                </InnerBox> 
+                            </LinkBox> 
                         </Box>
                         <Box></Box>
                         <Box></Box>
@@ -102,7 +124,9 @@ function Projects() {
                             <Cover/>
                             <GameTitle>notified</GameTitle>
                             <Blurb>hello hello hello hello hello hello hello hello hello hello hello hellohello hello</Blurb>
-                            <LinkBox></LinkBox>
+                            <LinkBox>
+                            
+                            </LinkBox>
                         </Box>
                         <Box></Box>
                         <Box></Box>
