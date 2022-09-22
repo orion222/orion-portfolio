@@ -16,6 +16,7 @@ function Nav(){
         font-family: 'Reem Kufi Fun', sans-serif;
         font-size: 1.5vw; 
         display: flex;
+        top: 0;
         justify-content: center;
 
         `;
