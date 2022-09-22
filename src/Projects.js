@@ -5,8 +5,11 @@ import theme from './theme';
 import Nav from './Nav';
 import Footer from './Footer'
 import img from './images/orionchen.jpg'
-import gitLogo from './images/logos/gitLogo.png';
+import gitLogo from './images/logos/gitLogo.png';no
 import link from './images/link.png';
+const path = require('path');
+const fs = require('fs');
+
 
 const {colors} = theme;
 const {fonts} = theme;
@@ -100,6 +103,18 @@ function Projects() {
         background-repeat: no-repeat;
         background-position: center;
     `
+
+    const coverFolder = ".\images\projects";
+    const covers = [];
+    fs.readdir(coverFolder, function (err, files) {
+        for (let i = 0; i < Math.ceil(files.length / 3.00); i++)
+        if (err) {
+          console.error("Could not list the directory.", err);
+          process.exit(1);
+        }
+        files.forEach(function(file){covers.push(file)})
+    });
+    
     return (
         <Container>
             <Body>

@@ -14,14 +14,13 @@ const{colors} = theme;
 function Footer(){
 
     const Container = styled.div`
-        position: fixed;
+        position: relative;
         width: 100vw;
         height: 3.45vw;
         background-color: ${colors.grey};
         font-size: 1.5vw; 
         display: flex;
         align-items: center;
-        bottom: 0;
     `;
 
     const Subtitle = styled.div`
