@@ -21,7 +21,7 @@ function Footer(){
         font-size: 1.5vw; 
         display: flex;
         align-items: center;
-        bottom: 0;
+        bottom: 0vw;
     `;
 
     const Subtitle = styled.div`
