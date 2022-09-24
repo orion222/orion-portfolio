@@ -97,7 +97,7 @@ function Nav(){
                 
                 <ButtonContainer>
                     
-                    <Button href='/orion-portfolio-#/projects'>
+                    <Button href='/orion-portfolio/#/projects'>
                         Projects
                     </Button>
                     <Button href='/orion-portfolio/#/'>
