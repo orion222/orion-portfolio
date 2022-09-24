@@ -97,10 +97,10 @@ function Nav(){
                 
                 <ButtonContainer>
                     
-                    <Button href='/#/projects'>
+                    <Button href='/orion-portfolio-#/projects'>
                         Projects
                     </Button>
-                    <Button href='/'>
+                    <Button href='/orion-portfolio/#/'>
                         Home
                     </Button>
                     <Button href='https://docs.google.com/document/d/1Xv1uMXS3k9yu0NcZQmkbjQ-D6gSYQVQP/edit?usp=sharing&ouid=105402434894730909309&rtpof=true&sd=true' target = '_blank'>
