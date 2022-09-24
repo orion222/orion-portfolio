@@ -94,7 +94,7 @@ function Footer(){
             buttons.push(<Anc href = {logosLinks[i]} target="_BLANK"><Button></Button></Anc>);
         }
 
-        return (buttons.map((Button) => {return (<div>{Button}</div>);}));
+        return (buttons.map((Button) => <div>{Button}</div>));
         
     
     };

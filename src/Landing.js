@@ -12,7 +12,7 @@ function Landing() {
 
     const Container = styled.div`
         width: 100vw;
-        height: 44.1vw;
+        height: 47vw;
         background-color: ${colors.mintGreen};
         display: flex;
         justify-content: center;

@@ -4,12 +4,19 @@ import styled from 'styled-components';
 import theme from './theme';
 import Nav from './Nav';
 import Footer from './Footer'
-import img from './images/orionchen.jpg'
-import gitLogo from './images/logos/gitLogo.png';no
-import link from './images/link.png';
-const path = require('path');
-const fs = require('fs');
 
+// images
+import nullCover from './images/projects/nullCover.png'
+import gitLogo from './images/logos/gitLogo.png';
+import gitLogoHighlighted from './images/logos/gitLogoHighlighted.png'
+import link from './images/projects/link.png';
+import linkHighlighted from './images/projects/linkHighlighted.png';
+import notifiedCover from './images/projects/notifiedCover.png';
+import undertaleCover from './images/projects/undertaleCover.png';
+import cpCover from './images/projects/cpCover.png';
+import stackerCover from './images/projects/stackerCover.png';
+import oreo from './images/projects/oreo.png';
+import { relative } from 'path';
 
 const {colors} = theme;
 const {fonts} = theme;
@@ -48,35 +55,22 @@ function Projects() {
         justify-content: center;
         position: relative;
     `
-    const Cover = styled.div`
-        width: 10vw;
-        height: 8vw;
-        background-image: url(${img});
-        background-size: cover;
-        margin-top: 1vw;
-        border-style: solid;
-        border-color: ${colors.grey};
-        margin-left: auto;
-        margin-right: auto;
-    `
-
     const GameTitle = styled.div`
         font-family: 'Catamaran', sans-serif;
         text-align: center;
         position: relative;
         font-size: 1.5vw;
-        color: #088DA5;
+        color: black;
         margin-top: 0.5vw;
     `
 
     const Blurb = styled.div`
-        text-align: justify;
         position: relative;
         font-size: .75vw;
         width: 12vw;
         margin-left: auto;
         margin-right: auto;
-        background-color: green;
+        text-align: left;
     `
 
     const LinkBox = styled.div`
@@ -96,62 +90,172 @@ function Projects() {
         display: flex;
         justify-content: space-around;
     `
+
+    const GitImage = styled.a`
+        height: 2.0vw;
+        width: 2.0vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(${gitLogo});
+        &:hover{
+            background-image: url(${gitLogoHighlighted});
+        }
+    `
+
     const LinkImage = styled.a`
         height: 2.0vw;
         width: 2.0vw;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        background-image: url(${link});
+        &:hover{
+            background-image: url(${linkHighlighted});
+        }
     `
 
-    const coverFolder = ".\images\projects";
-    const covers = [];
-    fs.readdir(coverFolder, function (err, files) {
-        for (let i = 0; i < Math.ceil(files.length / 3.00); i++)
-        if (err) {
-          console.error("Could not list the directory.", err);
-          process.exit(1);
+    const NullImage = styled.div`
+        background-image: url(${nullCover});
+        background-size: 14vw;
+        height: 14vw;
+        width: 14vw;
+        margin: auto;
+    `
+
+    const Oreo = styled.div`
+        background-image: url(${oreo});
+        background-size: 10vw;
+        background-repeat: no-repeat;
+        width: 10vw;
+        height: 4.9vw;
+        margin-left: 20vw;
+        margin-top: 5vw;
+
+    `
+    const DoubleDeck = styled.div`
+        width: 50vw;
+        height: 50vw;
+        position: relative;
+    `
+
+    const projects = [
+        [
+            {
+                name: "notified",
+                blurb: "A community-driven bank of notes and tests. Made by yung coders ©",
+                link: "https://staynotified.xyz",
+                gitLink: "https://github.com/Coders222/notified.",
+                cover: notifiedCover
+
+            },
+            {
+                name: "Undertale",
+                blurb: "A Java remake of the game UNDERTALE by Orion and Nicky. ",
+                link: "https://undertale.com/about/",
+                gitLink: "https://github.com/orion222/undertale---ics3u",
+                cover: undertaleCover
+            },
+
+            {
+                name: "Stacker",
+                blurb: "A Python remake of the arcade game Stacker by Orion and Jacky",
+                link: "https://en.wikipedia.org/wiki/Stacker_(arcade_game)",
+                gitLink: "https://github.com/orion222/ICS2U-Stacker",
+                cover: stackerCover
+            },
+        ],
+
+        [
+            {
+                name: "CP",
+                blurb: "Competitive programming solutions to contests such as CCC written in Python / Java",
+                link: "https://dmoj.ca",
+                gitLink: "https://github.com/orion222/competitive-programming",
+                cover: cpCover
+            },
+            { name: "null"},
+            { name: "null"}
+        ]
+    ]
+
+
+    const createCovers = () => {
+        const grid = []
+        // for each row store 3 projects
+        for (let i = 0; i < projects.length; i++){
+            // for each project
+            const row = []
+            for (let x = 0; x < 3; x++){
+                if (projects[i][x].name === "null"){
+                    row.push(
+                        <Box>
+                            <NullImage/>
+                        </Box>
+
+                    );
+                }
+                else{
+                    const Cover = styled.div`
+                        width: 10vw;
+                        height: 8vw;
+                        background-image: url(${projects[i][x].cover});
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        margin-top: 1vw;
+                        border-style: solid;
+                        border-color: ${colors.grey};
+                        margin-left: auto;
+                        margin-right: auto;
+                    `
+
+                    
+                    row.push(
+                        <div>
+                            <Box>
+                                <Cover/>
+                                <GameTitle>{projects[i][x].name}</GameTitle>
+                                <Blurb>{projects[i][x].blurb}</Blurb>
+                                <LinkBox>
+                                        <InnerBox>
+                                            <LinkImage href={projects[i][x].link} target="_blank"/>
+                                            <GitImage href={projects[i][x].gitLink} target="_blank"/>
+                                        </InnerBox> 
+                                </LinkBox> 
+
+                            </Box>
+                        </div>
+                    );
+                }
+            }
+            grid.push(  <div>
+                            <GridRow>
+                                {row}
+                            </GridRow>
+                        </div>);
         }
-        files.forEach(function(file){covers.push(file)})
-    });
+
+        return (grid.map((row) => <div>{row}</div>));
+
+    }
+
     
     return (
         <Container>
             <Body>
-                <Grid>
-                    <GridRow>
-                        <Box>
-                            <Cover/>
-                            <GameTitle>notified</GameTitle>
-                            <Blurb>aaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaa</Blurb>
-                            <LinkBox>
-                                <InnerBox>
-                                    <LinkImage style={{backgroundImage: `url(${link})`}} href="dmoj.ca"></LinkImage>
-                                    <LinkImage style={{backgroundImage: `url(${gitLogo})`}} href="dmoj.ca"></LinkImage>
-                                </InnerBox> 
-                            </LinkBox> 
-                        </Box>
-                        <Box></Box>
-                        <Box></Box>
-                    </GridRow>
-                    <GridRow>
-                        <Box>
-                            <Cover/>
-                            <GameTitle>notified</GameTitle>
-                            <Blurb>hello hello hello hello hello hello hello hello hello hello hello hellohello hello</Blurb>
-                            <LinkBox>
-                            
-                            </LinkBox>
-                        </Box>
-                        <Box></Box>
-                        <Box></Box>
-                    </GridRow>
-
-                </Grid>
-
+                <div>
+                    <DoubleDeck>
+                        <Grid>
+                            {createCovers()}
+                        </Grid>
+                        <Oreo/>
+                    </DoubleDeck>
+                </div>
             </Body>
-            <Nav/>
+            <Nav/>            
             <Footer/>
+            
 
 
 
