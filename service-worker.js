@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/orion-portfolio/precache-manifest.108a48cfc3c64aa156c41b7ccbb5be28.js"
+  "/orion-portfolio/precache-manifest.7d6bd5af5047818b25bf98d999aa98a7.js"
 );
 
 workbox.clientsClaim();
