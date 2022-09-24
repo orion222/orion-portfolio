@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/orion222/orion-portfolio/precache-manifest.1d7137541d6f646660154266c5b49763.js"
+  "/orion-portfolio/precache-manifest.4c4650f4d161e09cc8630f65310d9749.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/orion222/orion-portfolio/index.html", {
+workbox.routing.registerNavigationRoute("/orion-portfolio/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
