@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "6dcacceee112e691e0ef",
+    "revision": "fe3701a42c9105ce7864",
     "url": "/orion-portfolio/static/css/main.aa634dc5.chunk.css"
   },
   {
-    "revision": "6dcacceee112e691e0ef",
-    "url": "/orion-portfolio/static/js/main.6dcaccee.chunk.js"
+    "revision": "fe3701a42c9105ce7864",
+    "url": "/orion-portfolio/static/js/main.fe3701a4.chunk.js"
   },
   {
     "revision": "dd9a45a85ed393306520",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/orion-portfolio/static/media/oreo.48be0c22.png"
   },
   {
-    "revision": "bfe651562e1d16890bdebf747ae74516",
+    "revision": "ca7b057217fc059593514480c1ecd0ae",
     "url": "/orion-portfolio/index.html"
   }
 ];
