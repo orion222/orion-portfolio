@@ -151,7 +151,7 @@ function Projects() {
             },
             {
                 name: "Undertale",
-                blurb: "A Java remake of the game UNDERTALE by Orion and Nicky",
+                blurb: "A Java remake of the game UNDERTALE by Orion and Nicky Lam",
                 link: "https://undertale.com/about/",
                 gitLink: "https://github.com/orion222/undertale---ics3u",
                 cover: undertaleCover
@@ -159,7 +159,7 @@ function Projects() {
 
             {
                 name: "Stacker",
-                blurb: "A Python remake of the arcade game Stacker by Orion and Jacky",
+                blurb: "A Python remake of the arcade game Stacker by Orion and Jacky Men",
                 link: "https://en.wikipedia.org/wiki/Stacker_(arcade_game)",
                 gitLink: "https://github.com/orion222/ICS2U-Stacker",
                 cover: stackerCover
