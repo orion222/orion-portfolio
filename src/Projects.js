@@ -151,7 +151,7 @@ function Projects() {
             },
             {
                 name: "Undertale",
-                blurb: "A Java remake of the game UNDERTALE by Orion and Nicky. ",
+                blurb: "A Java remake of the game UNDERTALE by Orion and Nicky",
                 link: "https://undertale.com/about/",
                 gitLink: "https://github.com/orion222/undertale---ics3u",
                 cover: undertaleCover
