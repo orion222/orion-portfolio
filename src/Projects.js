@@ -169,7 +169,7 @@ function Projects() {
         [
             {
                 name: "CP",
-                blurb: "Competitive programming solutions to contests such as CCC written in Python / Java",
+                blurb: "Competitive programming solutions to contests such as CCC written in Python and Java",
                 link: "https://dmoj.ca",
                 gitLink: "https://github.com/orion222/competitive-programming",
                 cover: cpCover
