@@ -12,7 +12,7 @@ function Landing() {
 
     const Container = styled.div`
         width: 100vw;
-        height: 45.35vw;
+        height: 100vh;
         background-color: ${colors.mintGreen};
         display: flex;
         justify-content: center;
@@ -70,6 +70,7 @@ function Landing() {
         font-size: 2vw;
     `
 
+
     
 
     return (
@@ -92,6 +93,7 @@ function Landing() {
                 </MainBox>
             </Container>
             <Footer/>
+            
 
         </div>
     )

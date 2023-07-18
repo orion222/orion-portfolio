@@ -14,27 +14,29 @@ const{colors} = theme;
 function Footer(){
 
     const Container = styled.div`
-        position: relative;
+        position: absolute;
         width: 100vw;
         height: 3.45vw;
+        min-height: 60px;
         background-color: ${colors.grey};
-        font-size: 1.5vw; 
+        font-size: clamp(20px, 1.5vw, 1.5vw); 
         display: flex;
         align-items: center;
-        bottom: 0vw;
+        justify-content: center;
+        bottom: 0;
     `;
 
     const Subtitle = styled.div`
         text-size: 1.5vw;
         text-weight: bold;
-        margin-left: 5vw;
         font-family: 'Poppins', sans-serif;
-        margin-left: 25vw;
     `
 
     const ButtonContainer = styled.div`
         width: 30vw;
+        min-width: 500px;
         height: 2.5vw;
+        min-height: 40px;
         display: flex;
         justify-content: space-evenly;
         margin-left: 5vw;
@@ -69,9 +71,11 @@ function Footer(){
         for (let i = 0; i < logos.length; i++){
             const Button = styled.div`
                 width: 2.5vw;
+                min-width: 50px;
+                min-height: 50px;
                 height: 2.3vw;
                 background-image: url(${logos[i]});
-                background-size: 2.2vw;
+                background-size: clamp(25px, 2.2vw, 2.2vw);
                 background-repeat: no-repeat;
                 background-position: center;
                 &:hover {

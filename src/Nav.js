@@ -11,10 +11,10 @@ function Nav(){
     const Container = styled.div`
         position: fixed;
         width: 100vw;
-        height: 5vw;
+        height: clamp(50px, 5vw, 5vw);
         background-color: ${colors.jade};
         font-family: 'Reem Kufi Fun', sans-serif;
-        font-size: 1.5vw; 
+        font-size: clamp(20px, 1.5vw, 1.5vw); 
         display: flex;
         top: 0;
         justify-content: center;
@@ -76,7 +76,6 @@ function Nav(){
     `
 
     const Name = styled.div`
-        width: 10vw;
         margin-top: auto;
         margin-bottom: auto;
         margin-left: 6vw;
