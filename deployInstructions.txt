@@ -1,0 +1,18 @@
+to deploy:
+
+install github pages 
+npm i gh-pages
+
+go to package.json
+add
+  "homepage": "https://orion222.github.io/orion-portfolio",
+to the top and 
+
+add 
+    "deploy": "gh-pages -d build",
+in scripts
+
+then run 
+    npm run deploy
+    
+website should be hosted from then.
