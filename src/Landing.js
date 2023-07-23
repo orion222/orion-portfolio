@@ -82,7 +82,7 @@ function Landing() {
                         <Header>Orion Chen</Header>
                         <Description>
                         <br></br><Subtitle>Aspiring computer scientist. </Subtitle>
-                        <br></br>Welcome to my portfolio. I am currently a 12th grade student at Markville Secondary pursuring a career in the field of computer science. Some of my skills include Python, Java, React, and Javascript. Competitive programming and app development is cool too.
+                        <br></br>Welcome to my portfolio. I am currently a computer science major at UofT pursuring a career in the field of computer science. Some of my skills include Python, Java, React, and Javascript. Competitive programming and app development is cool too.
                         <br></br>
 
                         </Description>
